@@ -1,13 +1,6 @@
-import dragula from dragula
-
+import dragula from 'dragula';
 
 function init() {
-    var dropcontainers = [
-      document.querySelector("#dragparent"),
-      document.querySelector("#box1"), 
-      document.querySelector("#box2")
-    ];
-
     dragula(dropcontainers).on("drag", function(el){
         el.classList.remove("box1", "box2", "dragparent");
     })
@@ -18,10 +11,6 @@ function init() {
       el.classList.add(containerClass);
     })
   }
-
-
-
-
 window.onload = function (){
   init();
   console.log("THE DRAG IS WORKINGGG");
