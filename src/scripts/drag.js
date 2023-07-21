@@ -1,18 +1,6 @@
 import dragula from dragula
 
 
-/*
-window.onload = function(){
-    init();
-    console.log("THE DRAG IS WOKRING");
-}
-*/
-
-document.addEventListener("DOMContentLoaded", function() {
-  init();
-  console.log("THE DRAG IS WORKING");
-});
-
 function init() {
     var dropcontainers = [document.querySelector("#dragparent"), document.querySelector("#box1"), document.querySelector("#box2")];
     dragula(dropcontainers).on("drag", function(el){
@@ -24,5 +12,10 @@ function init() {
       var containerClass = target.id;
       // add the new class to the dropped element
       el.classList.add(containerClass);
-    });
+    })
   }
+  
+document.addEventListener("DOMContentLoaded", function() {
+  init();
+  console.log("THE DRAG IS WORKING");
+});
