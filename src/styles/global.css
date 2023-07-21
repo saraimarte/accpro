@@ -10,6 +10,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .activity{
+    touch-action: none;
     border-radius:50px;
     min-width:50px;
     padding:1em 2em;
