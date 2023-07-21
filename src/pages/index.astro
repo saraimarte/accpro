@@ -18,9 +18,8 @@ const activitiesCount = 10;
 		<title> Astro</title>
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Mono&display=swap"
 		rel="stylesheet">
-		<script src = "https://cdn.jsdelivr.net/gh/bevacqua/dragula/dist/dragula.min.js"> </script>
+		<!--<script src = "https://cdn.jsdelivr.net/gh/bevacqua/dragula/dist/dragula.min.js"> </script> -->
 		<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/gh/bevacqua/dragula/dist/dragula.min.css">
-		<script src = "/opt/build/repo/src/scripts/grade.js"> </script>
 
 	</head>
 	<body>
@@ -35,41 +34,10 @@ const activitiesCount = 10;
 			</Column3>
 	  </FlexLayout>
 
-	  <!--
-<script>
+	  <script> 
+		import "/opt/build/repo/src/scripts/grade.js";
 		import "../dragulaFolder/dragula.min.js";
-		</script> 
-		<script>
-			//import "../scripts/drag.js";
-			window.onload = function(){
-				init();
-			}
-
-			function init() {
-				var dropcontainers = [document.querySelector("#dragparent"), document.querySelector("#box1"), document.querySelector("#box2")];
-				dragula(dropcontainers).on("drag", function(el){
-					el.classList.remove("box1", "box2", "dragparent");
-					//el.style.border = "2px solid black";
-				})
-				dragula(dropcontainers).on("drop", function(el, target, source) {
-				// check if the target container is dragparent or dragparent2
-				var containerClass = target.id;
-				// add the new class to the dropped element
-				el.classList.add(containerClass);
-				});
-			}
-
-		</script> 
-    		 <script src = "../scripts/grade.js" >
-	    </script>
-
-	
-	  <script src = "../scripts/drag.js"> </script>
-
-
-	   -->
-	
-	   <script src = "/opt/build/repo/src/scripts/drag.js" is:inline></script>
-	
+		import "../scripts/drag.js";
+	  </script>
 	</body>
 </html>
