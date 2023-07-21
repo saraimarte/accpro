@@ -21,7 +21,6 @@ function init() {
 
 
 
-window.addEventListener('touchmove', function() {})
 
 window.onload = function (){
   init();
