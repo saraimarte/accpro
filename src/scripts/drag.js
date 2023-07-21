@@ -11,7 +11,7 @@ function init() {
     dragula(dropcontainers).on("drag", function(el){
         el.classList.remove("box1", "box2", "dragparent");
     })
-    dragula(dropcontainers).on("drop", function(el, source) {
+    dragula(dropcontainers).on("drop", function(el, target, source) {
       // check if the target container is dragparent or dragparent2
       el.classList.add(containerClass);
     })
