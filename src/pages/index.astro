@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import '../dragulaFolder/dragula.min.css';
+//import '../dragulaFolder/dragula.min.css';
 import FlexLayout from '/opt/build/repo/src/layouts/FlexLayout.astro';
 import Column1 from '/opt/build/repo/src/layouts/Column1.astro';
 import Column2 from '/opt/build/repo/src/layouts/Column2.astro';
@@ -18,19 +18,25 @@ const activitiesCount = 10;
 		<title> Astro</title>
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Mono&display=swap"
 		rel="stylesheet">
+		<link rel = "stylesheet" href = "drag.css">
+		<script src = "drag.js"> </script>
+		<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/gh/bevacqua/dragula/dist/dragula.min.css">
+		<script src = "https://cdn.jsdelivr.net/gh/bevacqua/dragula/dist/dragula.min.js"> </script>
 	</head>
 	<body>
 		<FlexLayout>
 			<Column1 > 
 				<DragParent>	
-					{activities.slice(0,activitiesCount).map((activity,index) => ( <div draggable="true" class = {`activity ${answers[index]}`}> {activity} </div>))}
+					{activities.slice(0,activitiesCount).map((activity,index) => ( <div class = {`activity ${answers[index]}`}> {activity} </div>))}
 				</DragParent>
 			</Column1>
 			<Column2 />
 			<Column3>
 			</Column3>
 	  </FlexLayout>
-		<script>
+
+	  <!--
+<script>
 		import "../dragulaFolder/dragula.min.js";
 		</script> 
 		<script>
@@ -57,11 +63,13 @@ const activitiesCount = 10;
     		 <script src = "../scripts/grade.js" >
 	    </script>
 
-	  <!--
+	
 	  <script src = "../scripts/drag.js"> </script>
 
 
 	   -->
+	
+		
 	
 	</body>
 </html>
