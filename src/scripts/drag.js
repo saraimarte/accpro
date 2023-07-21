@@ -1,6 +1,5 @@
 import dragula from dragula
 
-document.addEventListener('touchmove', function() { e.preventDefault(); }, { passive:false });
 
 function init() {
     var dropcontainers = [
@@ -24,3 +23,5 @@ window.onload = function (){
   init();
   console.log("THE DRAG IS WORKINGGG");
 }
+
+document.addEventListener('touchmove', function() { e.preventDefault(); }, { passive:false });
