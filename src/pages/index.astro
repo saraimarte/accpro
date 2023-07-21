@@ -23,7 +23,7 @@ const activitiesCount = 10;
 		<FlexLayout>
 			<Column1 > 
 				<DragParent>	
-					{activities.slice(0,activitiesCount).map((activity,index) => ( <div class = {`activity ${answers[index]}`}> {activity} </div>))}
+					{activities.slice(0,activitiesCount).map((activity,index) => ( <div draggable="true" class = {`activity ${answers[index]}`}> {activity} </div>))}
 				</DragParent>
 			</Column1>
 			<Column2 />
@@ -35,9 +35,9 @@ const activitiesCount = 10;
 		</script> 
 		<script>
 			//import "../scripts/drag.js";
-			/*window.onload = function(){
+			window.onload = function(){
 				init();
-			}*/
+			}
 
 			function init() {
 				var dropcontainers = [document.querySelector("#dragparent"), document.querySelector("#box1"), document.querySelector("#box2")];
@@ -52,7 +52,6 @@ const activitiesCount = 10;
 				el.classList.add(containerClass);
 				});
 			}
-			init();
 
 		</script> 
     		 <script src = "../scripts/grade.js" >
