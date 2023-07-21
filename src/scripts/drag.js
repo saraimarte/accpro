@@ -1,15 +1,18 @@
-/*window.onload = function(){
-    init();
-}
-*/
-
 import dragula from dragula
 
+window.onload = function(){
+    init();
+    console.log("THE DRAG IS WOKRING");
+}
+
+
+
+/*
 document.addEventListener("DOMContentLoaded", function() {
   init();
   console.log("THE INIT FUNCTION IS RUNNINGGNGNGNGN")
 });
-
+*/
 
 function init() {
     var dropcontainers = [document.querySelector("#dragparent"), document.querySelector("#box1"), document.querySelector("#box2")];
