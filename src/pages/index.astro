@@ -1,6 +1,11 @@
 ---
 import '../styles/global.css';
 import FlexLayout from '/opt/build/repo/src/layouts/FlexLayout.astro';
+import Column1 from '/opt/build/repo/src/layouts/Column1.astro';
+import Column2 from '/opt/build/repo/src/layouts/Column2.astro';
+import Column3 from '/opt/build/repo/src/layouts/Column3.astro';
+import DragParent from '/opt/build/repo/src/components/DragParent.astro';
+const activitiesCount = 10;
 
 ---
 
@@ -14,7 +19,14 @@ import FlexLayout from '/opt/build/repo/src/layouts/FlexLayout.astro';
 	</head>
 	<body>
 		<FlexLayout>
-			k
+			<Column1 > 
+				<DragParent>	
+					HELLO
+				</DragParent>
+			</Column1>
+			<Column2 />
+			<Column3>
+			</Column3>
 	  </FlexLayout>
 	</body>
 </html>
