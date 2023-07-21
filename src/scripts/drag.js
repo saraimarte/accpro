@@ -1,6 +1,11 @@
-window.onload = function(){
+/*window.onload = function(){
     init();
 }
+*/
+document.addEventListener("DOMContentLoaded", function() {
+  init();
+});
+
 
 function init() {
     var dropcontainers = [document.querySelector("#dragparent"), document.querySelector("#box1"), document.querySelector("#box2")];
