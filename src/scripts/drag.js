@@ -28,6 +28,11 @@ function init() {
       scrollable = true;
 
     })
+
+    dragula(dropcontainers).on("dragend", function(el,source)) {
+      scrollable = true;
+
+    }
   }
 
 window.onload = function (){
