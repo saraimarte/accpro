@@ -5,6 +5,8 @@ import Column1 from '/opt/build/repo/src/layouts/Column1.astro';
 import Column2 from '/opt/build/repo/src/layouts/Column2.astro';
 import Column3 from '/opt/build/repo/src/layouts/Column3.astro';
 import DragParent from '/opt/build/repo/src/components/DragParent.astro';
+import {activities, answers} from  '/opt/build/repo/src/scripts/shuffle.js'; 
+
 const activitiesCount = 10;
 
 ---
@@ -21,12 +23,16 @@ const activitiesCount = 10;
 		<FlexLayout>
 			<Column1 > 
 				<DragParent>	
-					HELLO
+					{activities.slice(0,activitiesCount).map((activity,index) => ( <div class = {`activity ${answers[index]}`}> {activity} </div>))}
 				</DragParent>
 			</Column1>
 			<Column2 />
 			<Column3>
 			</Column3>
 	  </FlexLayout>
+	  <script src = '/opt/build/repo/src/scripts/drag.js'> </script>
+	  <script src = '/opt/build/repo/src/dragulaFolder/dragula.min.js' ></script> 
+	  <script src = '/opt/build/repo/src/scripts/grade.js'> </script>
+
 	</body>
 </html>

@@ -1,3 +1,45 @@
-h1{
-    font-size:200px;
+*{
+    box-sizing:border-box;
+    user-select: none;
 }
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url("/opt/build/repo/src/images/BGP.png");
+    font-family: 'Roboto', sans-serif;
+}
+.activity{
+    border-radius:50px;
+    min-width:50px;
+    padding:1em 2em;
+    text-align:center;
+    background:#f9a8b9;
+    width:250px;
+    cursor:pointer;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity:hover{
+    background-color: #f195a9 ;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .activity{
+        width:30%;
+
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .activity{
+        width:40%;
+        font-size:0.8em;
+    }
+
+
+  }
