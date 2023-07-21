@@ -1,6 +1,6 @@
 import dragula from dragula
 
-/*
+
 function init() {
     var dropcontainers = [
       document.querySelector("#dragparent"),
@@ -20,43 +20,8 @@ function init() {
   }
 
 
-*/
 
-
-
-
-
-function init(){
-  var dropcontainers = [
-    document.querySelector("#dragparent"),
-    document.querySelector("#box1"), 
-    document.querySelector("#box2")
-  ];
-  var scrollable = true;
-
-  var listener = function(e) {
-      if (! scrollable) {
-          e.preventDefault();
-      }
-  }
-
-  dragula([dropcontainers], {
-    direction: 'horizontal'
-}).on('drag', function(el, source) {
-    scrollable = false;
-    el.classList.remove("box1", "box2", "dragparent");
-}).on('drop', function(el, target, source) {
-    scrollable = true;
-     // check if the target container is dragparent or dragparent2
-     var containerClass = target.id;
-     // add the new class to the dropped element
-     el.classList.add(containerClass);
-});
-
-
-document.addEventListener('touchmove', listener, { passive:false });
-
-}
+window.addEventListener('touchmove', function() {})
 
 window.onload = function (){
   init();
