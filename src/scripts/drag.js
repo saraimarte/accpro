@@ -2,6 +2,7 @@
     init();
 }
 */
+
 document.addEventListener("DOMContentLoaded", function() {
   init();
   console.log("THE INIT FUNCTION IS RUNNINGGNGNGNGN")
