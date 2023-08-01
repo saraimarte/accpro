@@ -34,7 +34,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    max-height:1vh;
+    max-height:5vh;
 }
 
 .activity:hover{
