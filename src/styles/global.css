@@ -30,7 +30,8 @@ body{
 }
 
 .activity:hover{
-    background-color: #f195a9 ;
+    /*background-color: #f195a9 ;*/
+    background-color: #ca2a4d;
 
 }
 
