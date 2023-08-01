@@ -20,7 +20,26 @@ const activitiesCount = 10;
 		rel="stylesheet">
 		<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/gh/bevacqua/dragula/dist/dragula.min.css">
 	</head>
-	<script>
+		
+	<body>
+		<FlexLayout>
+			<Column1 > 
+				<DragParent>	
+					{activities.slice(0,activitiesCount).map((activity,index) => ( <div class = {`activity ${answers[index]}`}> {activity} </div>))}
+				</DragParent>
+			</Column1>
+			<Column2 />
+			<Column3>
+			</Column3>
+	  </FlexLayout>
+
+	  <script> 
+		import "/opt/build/repo/src/scripts/grade.js";
+		import "../dragulaFolder/dragula.min.js";
+		import "../scripts/drag.js";
+		import "https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js";
+	  </script>
+	  <script>
 		import _ from 'lodash';
 		var activities = [
 			"Purchasing equipment",
@@ -47,34 +66,12 @@ const activitiesCount = 10;
 			const [shuffledArr1, shuffledArr2] = _.unzip(shuffledArr);
 			return [shuffledArr1, shuffledArr2];
 		}
-		
 	
-		
 		window.onload = function (){
 			var [activities, answers] = shuffle();
 			console.log("ITS SHUFFLING");
 		}
 		</script>
-		
-	<body>
-		<FlexLayout>
-			<Column1 > 
-				<DragParent>	
-					{activities.slice(0,activitiesCount).map((activity,index) => ( <div class = {`activity ${answers[index]}`}> {activity} </div>))}
-				</DragParent>
-			</Column1>
-			<Column2 />
-			<Column3>
-			</Column3>
-	  </FlexLayout>
-
-	  <script> 
-		import "/opt/build/repo/src/scripts/grade.js";
-		import "../dragulaFolder/dragula.min.js";
-		import "../scripts/drag.js";
-		import "https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js";
-	  </script>
-	  
 
 	</body>
 </html>
