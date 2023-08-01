@@ -1,4 +1,5 @@
 import _ from 'lodash';
+console.log("shuffle is running")
 var activities = [
     "Purchasing equipment",
     "Paying dividends",
