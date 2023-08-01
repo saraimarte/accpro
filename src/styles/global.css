@@ -35,7 +35,7 @@ body{
     align-items: center;
     font-family: 'Roboto', sans-serif;
    /* font-size: calc(1vh+.5rem);*/
-   font-size: clamp(.5rem, 1vw, 1rem);
+   font-size: clamp(.5rem, 5vw, 1rem);
 }
 
 .activity:hover{
