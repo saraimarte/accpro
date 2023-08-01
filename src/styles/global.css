@@ -34,7 +34,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    width:clamp(100px, 250px, 1rem);
+    width:clamp(100px, 250px, 400px);
 }
 
 .activity:hover{
