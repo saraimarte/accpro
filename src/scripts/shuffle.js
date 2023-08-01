@@ -16,7 +16,7 @@ var activities = [
   ]
 var answers = ['Yes', 'Yes', 'Yes', 'Yes', 'No', 'Yes', 'No', 'No', 'Yes', 'No', 'Yes', 'No']
 
-function shuffle(arr1, arr2) {
+export function shuffle(arr1, arr2) {
     if (arr1.length !== arr2.length){
         throw new Error("Arrays must have the same length");
     }

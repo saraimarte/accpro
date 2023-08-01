@@ -6,10 +6,11 @@ import Column1 from '/opt/build/repo/src/layouts/Column1.astro';
 import Column2 from '/opt/build/repo/src/layouts/Column2.astro';
 import Column3 from '/opt/build/repo/src/layouts/Column3.astro';
 import DragParent from '/opt/build/repo/src/components/DragParent.astro';
-import {activities, answers} from '/opt/build/repo/src/scripts/shuffle.js'; 
+//import {activities, answers} from '/opt/build/repo/src/scripts/shuffle.js'; 
 const activitiesCount = 10;
-
+import {shuffle} from '/opt/build/repo/src/scripts/shuffle.js'; 
 ---
+
 
 <html lang="en">
 	<head>
@@ -22,6 +23,24 @@ const activitiesCount = 10;
 	</head>
 		
 	<body>
+		<script>
+			var activities = [
+				"Purchasing equipment",
+				"Paying dividends",
+				"Selling products",
+				"Buying inventory",
+				"Hiring new employees",
+				"Paying salaries",
+				"Hosting a Marketing campaign",
+				"Hosting a conference",
+				"Purchasing supplies",
+				"Interviewing job applicants",
+				"Investing in stocks",
+				"Attending an industry conference",
+			]
+			var answers = ['Yes', 'Yes', 'Yes', 'Yes', 'No', 'Yes', 'No', 'No', 'Yes', 'No', 'Yes', 'No']
+			var [activities, answers] = shuffle(activities, answers);
+		  </script>
 		<FlexLayout>
 			<Column1 > 
 				<DragParent>	
@@ -39,6 +58,6 @@ const activitiesCount = 10;
 		import "https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js";
 	  </script>
 	 
-
+	
 	</body>
 </html>
