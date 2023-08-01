@@ -3,14 +3,22 @@
     user-select: none;
 }
 
+
 body{
     margin:0;
     padding:0;
    /* background-image: url("/opt/build/repo/src/images/BGP.png");
     */background-color: #de2e53;
-    font-family: 'Roboto', sans-serif;
-    overflow: hidden;
-}
+    font-family: 'Roboto', sans-serif;}
+
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        body{
+            overflow: hidden;
+
+        }
+    }
 .activity{
     touch-action: none;
     border-radius:50px;
