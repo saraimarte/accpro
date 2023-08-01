@@ -9,6 +9,7 @@
 
 
 <style>
+  
     h1{
        /* border:5px solid black;*/
        position: relative;
@@ -24,9 +25,11 @@
         border-radius: 20px;
         /*height:100%;*/
         overflow-y: auto;
-        overflow: auto;
         min-height: min-content;
         background-color: white;
+        user-select: none;
+    
+        /*this fixes the fact that activities heading does not show up but there should be a better fix */
 
     }
     @media only screen and (max-width: 1000px) {
