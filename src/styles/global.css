@@ -9,10 +9,9 @@ body{
     padding:0;
    /* background-image: url("/opt/build/repo/src/images/BGP.png");
     */background-color: #de2e53;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+}
 
-
- 
 .activity{
     touch-action: none;
     border-radius:50px;
