@@ -50,8 +50,13 @@ const activitiesCount = 10;
 		
 		window.addEventListener("load", function() {
 			var [activities, answers] = shuffle();
-			const activitiesCount = 10;
 		})
+
+		
+		window.onload = function (){
+			var [activities, answers] = shuffle();
+			console.log("ITS SHUFFLING");
+		}
 		</script>
 		
 	<body>

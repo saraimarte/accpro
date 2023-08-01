@@ -28,3 +28,4 @@ function shuffle(arr1, arr2) {
 var [activities, answers] = shuffle(activities, answers);
 export var activities;
 export var answers; 
+
