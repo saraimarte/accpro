@@ -48,8 +48,10 @@ const activitiesCount = 10;
 			return [shuffledArr1, shuffledArr2];
 		}
 		
-		var [activities, answers] = shuffle(activities, answers);
-		
+		window.addEventListener("load", function() {
+			var [activities, answers] = shuffle();
+			const activitiesCount = 10;
+		})
 		</script>
 		
 	<body>
