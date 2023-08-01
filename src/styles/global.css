@@ -35,6 +35,28 @@ body{
 
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px none;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: none;
+  }
+
+
 @media only screen and (max-width: 1000px) {
     .activity{
         width:30%;
@@ -50,3 +72,4 @@ body{
 
 
   }
+
