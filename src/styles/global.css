@@ -27,14 +27,14 @@ body{
     text-align:center;
     /*background:#f9a8b9;*/
     background-color: #de2e53;
-    /*width:250px;*/
+    width:250px;
     cursor:pointer;
     color:white;
     display:flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    width:clamp(100px, 250px, 400px);
+    font-size: calc(1vh+.5rem);
 }
 
 .activity:hover{
