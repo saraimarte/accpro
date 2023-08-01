@@ -3,7 +3,7 @@
     user-select: none;
 }
 
-  
+
 body{
     margin:0;
     padding:0;
@@ -34,8 +34,6 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-   /* font-size: calc(1vh+.5rem);*/
-   font-size: clamp(.5rem, 5vw, 1rem);
 }
 
 .activity:hover{
@@ -53,9 +51,7 @@ body{
   @media only screen and (max-width: 600px) {
     .activity{
         width:40%;
-        /*font-size:0.8em;*/
-        font-size: clamp(.5rem, 1vw, .1rem);
-
+        font-size:0.8em;
     }
 
 
