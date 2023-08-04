@@ -21,7 +21,7 @@ var activities = [
     "Paying Rent", 
     "Selling a delivery truck",
     "Collecting $2,000 payment from a customer who made a purchase on credit",
-    "Making a digital art piece for a customer" ,
+    "You made a digital art piece for a client and sent them an invoice" ,
     "Designing a new company logo",
     "Telling a creditor that you will pay them tomorrow"
 ]
