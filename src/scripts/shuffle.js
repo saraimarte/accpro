@@ -21,13 +21,12 @@ var activities = [
     "Paying Rent", 
     "Selling a delivery truck",
     "Collecting $2,000 payment from a customer who made a purchase on credit",
-    "You made a digital art piece for a client and sent them an invoice" ,
     "Designing a new company logo",
     "Telling a creditor that you will pay them tomorrow"
 ]
 var answers = ['Yes', 'Yes', 'Yes', 'Yes', 'No', 'Yes', 
 'No', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'Yes', 'No', 
-'No', 'No', 'Yes', 'Yes', 'Yes', 'Yes', 'No', 'No']
+'No', 'No', 'Yes', 'Yes', 'Yes', 'No', 'No']
 
 export function shuffle(arr1, arr2) {
     if (arr1.length !== arr2.length){
